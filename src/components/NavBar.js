@@ -18,7 +18,7 @@ const NavBar = ({activeTab}) => {
   return (
     <header>
         <div className='logo'>
-            <img src={process.env.PUBLIC_URL + '/logo.png'} alt='image'/>
+            <img src={process.env.PUBLIC_URL + '/logo.png'} alt='logo'/>
         </div>
         <nav className={statusNav}>
             {
