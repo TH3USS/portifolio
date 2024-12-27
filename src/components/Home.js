@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import CustomHook from './CustomHook';
 
 const Home = () => {
-  const refTab = useRef();
+  const refTab = useRef([]);
   CustomHook(refTab);
   return (
     <section className='home' ref={refTab}>
