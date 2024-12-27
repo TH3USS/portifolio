@@ -17,7 +17,7 @@ const Home = () => {
       </div>
       <div className='avatar'>
         <div className='card'>
-          <img src={process.env.PUBLIC_URL + '/lata.png'}/>
+          <img src={process.env.PUBLIC_URL + '/lata.png'} alt='image'/>
           <div className='info'>
             <div>Developer</div>
             <div>Brazilian</div>

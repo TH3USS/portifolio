@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 
 const CustomHook = (refTab = null, refDivs = null) => {
@@ -27,7 +27,7 @@ const CustomHook = (refTab = null, refDivs = null) => {
             }
             window.addEventListener('scroll', handleScroll);
         }
-    }, [activeTab])
+    }, [thisDivs, thisTab, activeTab])
 }
 
 export default CustomHook

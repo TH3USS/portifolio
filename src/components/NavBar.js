@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import {Connect, connect, useDispatch} from 'react-redux';
+import {connect, useDispatch} from 'react-redux';
 import {changeTabActive} from '../redux/action';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { faFontAwesomeIcon, FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const NavBar = ({activeTab}) => {
     const [listNav] = useState(['home', 'skills', 'projects', 'contacts']);
@@ -18,7 +18,7 @@ const NavBar = ({activeTab}) => {
   return (
     <header>
         <div className='logo'>
-            <img src={process.env.PUBLIC_URL + '/logo.png'}/>
+            <img src={process.env.PUBLIC_URL + '/logo.png'} alt='image'/>
         </div>
         <nav className={statusNav}>
             {
