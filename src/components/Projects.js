@@ -10,21 +10,21 @@ const Projects = () => {
       des: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium accusamus beatae, soluta blanditiis impedit, fuga sit quo nemo distinctio possimus id neque vitae eligendi, libero facere quaerat ipsam at. Neque!',
       mission: 'Back-end Developer, system analysis and design',
       language: 'HTML5, CSS3, React Js, SoketIO,...',
-      images: '/C-.png'
+      images: process.env.PUBLIC_URL + '/C-.png'
     },
     {
       name: "Project Real-Time chating in website",
       des: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium accusamus beatae, soluta blanditiis impedit, fuga sit quo nemo distinctio possimus id neque vitae eligendi, libero facere quaerat ipsam at. Neque!',
       mission: 'Back-end Developer, system analysis and design',
       language: 'HTML5, CSS3, React Js, SoketIO,...',
-      images: '/C-.png'
+      images: process.env.PUBLIC_URL + '/C-.png'
     },
     {
       name: "Project Real-Time chating in website",
       des: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium accusamus beatae, soluta blanditiis impedit, fuga sit quo nemo distinctio possimus id neque vitae eligendi, libero facere quaerat ipsam at. Neque!',
       mission: 'Back-end Developer, system analysis and design',
       language: 'HTML5, CSS3, React Js, SoketIO,...',
-      images: '/C-.png'
+      images: process.env.PUBLIC_URL + '/C-.png'
     }
   ]);
   const refTab = useRef();
