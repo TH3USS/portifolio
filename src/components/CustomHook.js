@@ -6,28 +6,32 @@ const CustomHook = (refTab = null, refDivs = null) => {
     const thisDivs = refDivs;
     const activeTab = useSelector(state => state.activeTab);
     useEffect(() => {
-        if(thisTab != null && thisTab.current.classList.contains(activeTab)){
-            thisTab.current.scrollIntoView({behavior: 'smooth'});
+        if (thisTab && thisTab.current && thisTab.current.classList.contains(activeTab)) {
+            thisTab.current.scrollIntoView({ behavior: 'smooth' });
         }
 
-        if(thisDivs !== null){
+        if (thisDivs && thisDivs.current) {
             thisDivs.current.forEach((div) => {
-                div.classList.add('animation');
-            })
+                if (div) {
+                    div.classList.add('animation');
+                }
+            });
             const handleScroll = () => {
                 const scrollPosition = window.scrollY;
                 thisDivs.current.forEach((div) => {
-                    const offsetTop = div.getBoundingClientRect().top + scrollPosition;
-                    if(scrollPosition >= offsetTop -(window.innerHeight / 4 * 3)){
-                        div.classList.add('active');
-                    } else{
-                        div.classList.remove('active');
+                    if (div) {
+                        const offsetTop = div.getBoundingClientRect().top + scrollPosition;
+                        if (scrollPosition >= offsetTop - (window.innerHeight / 4 * 3)) {
+                            div.classList.add('active');
+                        } else {
+                            div.classList.remove('active');
+                        }
                     }
-                })
-            }
+                });
+            };
             window.addEventListener('scroll', handleScroll);
         }
-    }, [thisDivs, thisTab, activeTab])
+    }, [thisDivs, thisTab, activeTab]);
 }
 
 export default CustomHook
