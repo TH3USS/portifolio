@@ -37,7 +37,7 @@ const Skills = () => {
       icon: faLaravel
     },
   ]);
-  const refTab = useRef([]);
+  const refTab = useRef(null);
   const divs = useRef([]);
   CustomHook(refTab, divs);
   return (

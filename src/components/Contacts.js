@@ -16,7 +16,7 @@ const Contacts = () => {
       value: 'link'
     }
   ]);
-  const refTab = useRef([]);
+  const refTab = useRef(null);
   const divs = useRef([]);
   CustomHook(refTab, divs);
   return (

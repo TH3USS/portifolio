@@ -27,7 +27,7 @@ const Projects = () => {
       images: process.env.PUBLIC_URL + '/C-.png'
     }
   ]);
-  const refTab = useRef([]);
+  const refTab = useRef(null);
   const divs = useRef([]);
   CustomHook(refTab, divs);
   return (
