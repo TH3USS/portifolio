@@ -5,7 +5,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const NavBar = ({activeTab}) => {
-    const [listNav] = useState(['home', 'skills', 'projects', 'contacts']);
+    const [listNav] = useState(['Home', 'Skills', 'Projetos', 'Contatos']);
     const dispath = useDispatch();
     const changeTab = (value) => {
         dispath(changeTabActive(value));
