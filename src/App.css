@@ -16,7 +16,7 @@ body{
     width: 400px;
     height: 400px;
     content: '';
-    background-image: linear-gradient(to right, #d02e23, #7a43b6
+    background-image: linear-gradient(to right, #fc2c2c, #ff7d31
   );
   z-index: -1;
   top: -200px;
@@ -55,8 +55,8 @@ header{
     & span{
       cursor: pointer;
       &.active{
-        color: #e94553;
-        text-shadow: 0 0 5px #7a43b6;
+        color: #fc2c2c;
+        text-shadow: 0 0 5px #ff7d31;
       }
     }
   }
@@ -165,7 +165,7 @@ section{
         content: '';
         width: 70%;
         height: 70%;
-        background-image: linear-gradient(-45deg, red, blue);
+        background-image: linear-gradient(-45deg, #fc2c2c, #ff7d31);
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
