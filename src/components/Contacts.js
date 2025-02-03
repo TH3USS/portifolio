@@ -5,15 +5,15 @@ const Contacts = () => {
   const [listContacts] = useState([
     {
       title: 'Phone Number',
-      value: '+84123123'
+      value: '+11 99502-1758'
     },
     {
       title: 'Email',
-      value: 'nome@gmail.com'
+      value: 'matheusramossilva2003@gmail.com'
     },
     {
       title: 'Linkedin',
-      value: 'link'
+      value: 'https://www.linkedin.com/in/matheus-ra'
     }
   ]);
   const refTab = useRef(null);
