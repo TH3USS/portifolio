@@ -25,48 +25,6 @@ const Projects = () => {
       mission: 'Análise e design do sistema, desenvolvimento back-end e front-end e implementação de banco de dados.',
       language: 'ASP.NET MVC, .NET C#, HTML, CSS, Bootstrap, JavaScript e  SQL Server como anco de dados.',
       images: process.env.PUBLIC_URL + '/C-.png'
-    },
-    {
-      name: "Aplicação web para controle de gastos",
-      des: 'Este é um projeto de uma aplicação de controle de gastos, onde pode-se fazer a entrada dos gastos realizados e da receita ganha, a aplicação faz as contas do saldo final, mostrando se foi positivo ou negativo, e disponibilizando um gráfico pizza e um gráfico de linhas para a consulta.',
-      mission: 'Análise e design do sistema, desenvolvimento back-end e front-end e implementação de banco de dados.',
-      language: 'ASP.NET MVC, .NET C#, HTML, CSS, JavaScript e  SQL Server como anco de dados.',
-      images: process.env.PUBLIC_URL + '/C-.png'
-    },
-    {
-      name: "Calculadora de IMC",
-      des: 'Esta é uma aplicação web de uma calculadora de IMC.',
-      mission: 'Desenvolvimento back-end e front-end.',
-      language: 'ASP.NET MVC, .NET C#, HTML, CSS e JavaScript.',
-      images: process.env.PUBLIC_URL + '/C-.png'
-    },
-    {
-      name: "Conversor de Moedas",
-      des: 'Esta é uma aplicação web de um conversor de moeda.',
-      mission: 'Desenvolvimento back-end e front-end.',
-      language: 'ASP.NET MVC, .NET C#, HTML, CSS e JavaScript.',
-      images: process.env.PUBLIC_URL + '/C-.png'
-    },
-    {
-      name: "Gerador de Senhas",
-      des: 'Esta é uma aplicação web de um gerador de senhas.',
-      mission: 'Desenvolvimento back-end e front-end.',
-      language: 'ASP.NET MVC, .NET C#, HTML, CSS e JavaScript.',
-      images: process.env.PUBLIC_URL + '/C-.png'
-    },
-    {
-      name: "Simulador de Juros Compostos",
-      des: 'Esta é uma aplicação web de um simulador de juros compostos.',
-      mission: 'Desenvolvimento back-end e front-end.',
-      language: 'ASP.NET MVC, .NET C#, HTML, CSS e JavaScript.',
-      images: process.env.PUBLIC_URL + '/C-.png'
-    },
-    {
-      name: "Portal de Publicações",
-      des: 'Esta é uma aplicação web de um Portal de Publicações, na aplicação é possível fazer e visualizar publicações.',
-      mission: 'Análise e design do sistema, desenvolvimento back-end e front-end e implementação de banco de dados',
-      language: 'ASP.NET MVC, .NET C#, HTML, CSS, JavaScript e  SQL Server como anco de dados.',
-      images: process.env.PUBLIC_URL + '/C-.png'
     }
   ]);
   const refTab = useRef(null);
