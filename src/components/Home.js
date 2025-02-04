@@ -11,15 +11,15 @@ const Home = () => {
           MEU NOME É <span>MATHEUS</span>
         </div>
         <div className='des'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium accusamus beatae, soluta blanditiis impedit, fuga sit quo nemo distinctio possimus id neque vitae eligendi, libero facere quaerat ipsam at. Neque!
+        Me chamo Matheus, sou Desenvolvedor FullStack tenho experiência com HTML e CSS linguagens Front End como JavaScript e linguagens Back End como Java, C e principalmente C#, e linguagens de banco de dados como MySql, SQL Server e SQLite.
         </div>
         <a href='/Currículo-Matheus_Silva.pdf' target='_blank' rel='noopener noreferrer'>Baixe meu CV</a>
       </div>
       <div className='avatar'>
         <div className='card'>
-          <img src={process.env.PUBLIC_URL + '/lata.png'} alt='perfil'/>
+          <img src={process.env.PUBLIC_URL + '/perfil.png'} alt='perfil'/>
           <div className='info'>
-            <div>Developer</div>
+            <div>Desenvolvedor</div>
             <div>Brasileiro</div>
             <div>20/12</div>
             <div>Homem</div>
