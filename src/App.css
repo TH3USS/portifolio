@@ -5,7 +5,7 @@
 body{
   margin: 0;
   font-family: Poppins;
-  background-color: #1f1f1f;
+  background-color: #161616;
   color: #eee;
   font-size: 15px;
   min-height: 100vh;
@@ -16,7 +16,7 @@ body{
     width: 400px;
     height: 400px;
     content: '';
-    background-image: linear-gradient(to right, #fc2c2c, #ff7d31
+    background-image: linear-gradient(to right, #ff7d31, #fc2c2c
   );
   z-index: -1;
   top: -200px;
@@ -113,10 +113,10 @@ section{
         display: inline-flex;
         flex-direction: column;
         width: min(100%, 400px);
-        box-shadow: 0 150px 150px #e945e333;
+        box-shadow: 0 150px 150px #e9584533;
         transition: 0.5s;
         &:hover{
-          box-shadow: 0 150px 150px #e945e555;
+          box-shadow: 0 150px 150px #e9794555;
         }
         & img{
           width: 100%;
