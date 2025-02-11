@@ -66,7 +66,7 @@ const Projects = () => {
       des: 'Esta é uma aplicação web de um Portal de Publicações, na aplicação é possível fazer e visualizar publicações.',
       mission: 'Análise e design do sistema, desenvolvimento back-end e front-end e implementação de banco de dados',
       language: 'ASP.NET MVC, .NET C#, HTML, CSS, JavaScript e  SQL Server como anco de dados.',
-      images: process.env.PUBLIC_URL + 'C-.png'
+      images: process.env.PUBLIC_URL + 'C.png'
     }
   ]);
   const refTab = useRef(null);
