@@ -13,7 +13,7 @@ const Home = () => {
         <div className='des'>
         Me chamo Matheus, sou Desenvolvedor FullStack tenho experiência com HTML e CSS linguagens Front End como JavaScript e linguagens Back End como Java, C e principalmente C#, e linguagens de banco de dados como MySql, SQL Server e SQLite.
         </div>
-        <a href='/Currículo-Matheus_Silva.pdf' target='_blank' rel='noopener noreferrer'>Baixe meu CV</a>
+        <a href='/Currículo-Matheus-FullStack.pdf' target='_blank' rel='noopener noreferrer'>Baixe meu CV</a>
       </div>
       <div className='avatar'>
         <div className='card'>

@@ -75,13 +75,13 @@ section{
     justify-content: space-between;
     align-items: center;
     & .content{
-      font-family: 'MuseoModerno', system-ui;
+      /*font-family: 'MuseoModerno', system-ui;*/
       & .name{
-        font-size: 7em;
+        font-size: 6.5em;
         font-weight: bold;
         line-height: 1em;
         & span{
-          background-image: linear-gradient(to right, #7be728, #f3265f, #7f40ac, #7be728);
+          background-image: linear-gradient(to right, #e78428, #f32626, #e64514, #e78428);
           background-size: 200% auto;
           animation: gradientAnimation 5s linear infinite;
           -webkit-text-fill-color: transparent;
@@ -145,7 +145,7 @@ section{
     & .title{
       text-align: center;
       font-size: 3em;
-      font-family: 'MuseoModerno', system-ui;
+      /*font-family: 'MuseoModerno', system-ui;*/
     }
     & .des{
       color: #eee5;
@@ -196,7 +196,7 @@ section{
     & .title{
       font-size: 5vw;
       text-align: center;
-      font-family: 'MuseoModerno';
+      /*font-family: 'MuseoModerno';*/
       margin-top: 100px;
     }
     & .des{
@@ -267,7 +267,7 @@ section{
     & .title{
       font-size: 5vw;
       text-align: center;
-      font-family: 'MuseoModerno';
+      /*font-family: 'MuseoModerno';*/
     }
     & .des{
       color: #eee5;
@@ -280,6 +280,14 @@ section{
       & .item{
         margin-top: 50px;
       }
+    }
+    & svg{
+      margin-top: 20px;
+      margin-bottom: -10px;
+    }
+    & a{
+      text-decoration: none;
+      color: white;
     }
   }
 }

@@ -1,11 +1,17 @@
 import React, { useRef, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faReact, faHtml5, faCss3, faJs, faVuejs, faLaravel } from '@fortawesome/free-brands-svg-icons'
+import { faReact, faHtml5, faCss3, faJs, faPython } from '@fortawesome/free-brands-svg-icons'
+import { ReactComponent as CSharp } from '../csharp.svg'
 import CustomHook from './CustomHook';
 
 
 const Skills = () => {
-  const [listSkills] = useState ([
+  const [listSkills] = useState ([    
+    {
+      name: 'C#',
+      des:  'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium accusamus beatae, soluta blanditiis impedit, fuga sit quo nemo distinctio possimus id neque vitae eligendi, libero facere quaerat ipsam at. Neque!',
+      icon: CSharp,
+    },
     {
       name: 'HTML',
       des:  'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium accusamus beatae, soluta blanditiis impedit, fuga sit quo nemo distinctio possimus id neque vitae eligendi, libero facere quaerat ipsam at. Neque!',
@@ -27,14 +33,9 @@ const Skills = () => {
       icon: faReact
     },
     {
-      name: 'VueJs',
+      name: 'Python',
       des:  'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium accusamus beatae, soluta blanditiis impedit, fuga sit quo nemo distinctio possimus id neque vitae eligendi, libero facere quaerat ipsam at. Neque!',
-      icon: faVuejs
-    },
-    {
-      name: 'Laravel',
-      des:  'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium accusamus beatae, soluta blanditiis impedit, fuga sit quo nemo distinctio possimus id neque vitae eligendi, libero facere quaerat ipsam at. Neque!',
-      icon: faLaravel
+      icon: faPython
     },
   ]);
   const refTab = useRef(null);
@@ -46,13 +47,17 @@ const Skills = () => {
         This is my Skills
       </div>
       <div className='des' ref={(el) => el && divs.current.push(el)}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium accusamus beatae, soluta blanditiis impedit, fuga sit quo nemo distinctio possimus id neque vitae eligendi, libero facere quaerat ipsam at. Neque!
+        Tecnologias as quais tenho um maior dominio.
       </div>
       <div className='list' >
         {
           listSkills.map((value, key) => (
             <div key={key} className='item' ref={(el) => el && divs.current.push(el)}>
-              <FontAwesomeIcon icon={value.icon}/>
+              {value.name === 'C#' ? (
+                <CSharp/>
+              ) : (
+                <FontAwesomeIcon icon={value.icon} />
+              )}
               <h3>{value.name}</h3>
               {/*<div className='des'>{value.des}</div>*/}
             </div>
