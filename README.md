@@ -1,18 +1,19 @@
-# Portifolio  
+# Portfolio
 
-React_Portifolio =>  [![Portfolio](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)](https://react-portifolio-matheus.vercel.app/)  
+React\_Portfolio => [![Portfolio](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)](https://react-portifolio-matheus.vercel.app/)
 
-### Um portfólio pessoal desenvolvido com React!  
+### A personal portfolio developed with React!
 
-Este é um portfólio criado para exibir projetos, habilidades e informações profissionais de forma moderna e interativa.  
+This is a portfolio created to showcase projects, skills, and professional information in a modern and interactive way.
 
 <hr>  
 
-## Sobre o Projeto  
-Oi, eu sou o Matheus 👋<br>  
-Esse é um projeto feito com o intuito de colocar em prática conceitos aprendidos de **React**.  
-O objetivo deste projeto é mostrar minhas habilidades como desenvolvedor web, oferecendo uma visão clara e interativa dos meus trabalhos e competências.  
+## About the Project
+
+Hi, I’m Matheus 👋<br>
+This project was made to put into practice concepts learned in **React**.
+The goal of this project is to demonstrate my skills as a web developer, providing a clear and interactive view of my work and competencies.
 
 <br>  
 
-> Este projeto foi desenvolvido como parte do meu aprendizado e crescimento como desenvolvedor.  
+> This project was developed as part of my learning and growth as a developer.
