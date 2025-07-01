@@ -5,7 +5,6 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contacts from './components/Contacts';
 import Abilities from './components/Abilities';
-import ContactForm from './components/ContactForm';
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
       <Abilities/>
       <Projects/>
       <Contacts />
-      <ContactForm/>
     </main>
   );
 }

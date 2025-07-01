@@ -280,7 +280,17 @@ section{
     & .title{
       font-size: 5vw;
       text-align: center;
+      display: flex;
+      align-items: center;
+      justify-self: center;
       /*font-family: 'MuseoModerno';*/
+    }
+    & .contacts_content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 90px;
+      margin-top: 40px;
     }
     & .des{
       color: #eee5;
@@ -737,6 +747,8 @@ section{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
