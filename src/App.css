@@ -2,6 +2,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Caesar+Dressing&family=Contrail+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&family=Rubik+Mono+One&family=Six+Caps&family=Squada+One&family=Syncopate:wght@400;700&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+:root{
+  --primary-color: #101010;
+  --secondary-color: #e9264a;
+  --third-color: rgb(252, 242, 236);
+  --degrade-color1: #e94326;
+  --degrade-color2: #e9264a;
+  --degrade-color3: #eb0f0f;
+  --degrade-color4: #e95c26;
+}
+
 body{
   margin: 0;
   font-family: Poppins;
@@ -378,5 +391,390 @@ section{
         left: 0;
       }
     }
+  }
+}
+
+/*-----------------HABILITIES----------------*/
+
+.abilities{
+  height: 80vh;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: var(--primary-color); */
+  color: var(--third-color);
+}
+
+.title_abilities{
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+.title_abilities span{
+  color: var(--secondary-color);
+}
+
+.habilities_images{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards{
+  margin: 2%;
+}
+
+/*/////////// RECTANGLE ////////////*/
+
+.retan{
+  width: 150px;
+  height: 90px;
+  border-radius: 100px;
+  background-color: var(--third-color);
+  margin-right: 2%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-30deg);
+}
+
+.retan:hover{
+  width: 200px;
+  height: 95px;  
+  transform: rotate(0deg);
+  background: linear-gradient(45deg, #e94326, #e9264a, #eb0f0f, #e9264a, #e95c26);
+  background-size: 1200px 400px;
+  animation: degrade 10s linear infinite alternate;
+  transition: 0.3s;
+}
+
+/*/////////// HEXAGON ////////////*/
+
+.hexa {
+  width: 100px;
+  height: 57.75px;
+  border-radius: 2px;
+  background-color: var(--third-color);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2%;
+  transform: rotate(10deg);
+}
+
+.hexa:before {
+  content: "";
+  position: absolute;
+  top: -28.87px;
+  left: 0;
+  width: 100px;
+  height: 30px;
+  background: var(--third-color);
+  background-size: 1200px 400px;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+
+.hexa:after {
+  content: "";
+  position: absolute;
+  bottom: -28.87px;
+  left: 0;
+  width: 100px;
+  height: 30px;
+  background: var(--third-color);
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+  z-index: 0;
+}
+
+
+.hexa:hover {
+  width: 150px;
+  height: 62.75px;
+  transform: rotate(0deg);
+  background: linear-gradient(45deg, #e94326, #e9264a, #eb0f0f, #e9264a, #e95c26);
+  background-size: 1200px 400px;
+  animation: degrade 10s linear infinite alternate;
+  transition: 0.3s;
+}
+
+.hexa:hover:before{
+  top: -45.87px;
+  left: 0;
+  width: 150px;
+  height: 45.8px;
+  background: linear-gradient(45deg, #e94326, #e9264a, #eb0f0f, #e9264a, #e95c26);
+  background-size: 1200px 400px;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%); 
+  animation: degrade 10s linear infinite alternate;
+  transition: 0.3s;
+}
+
+.hexa:hover:after{
+  bottom: -45.87px;
+  left: 0;
+  width: 150px;
+  height: 45.8px;
+  background: linear-gradient(45deg, #e94326, #e9264a, #eb0f0f, #e9264a, #e95c26);
+  background-size: 1200px 400px;
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);  
+  animation: degrade 10s linear infinite alternate;
+  transition: 0.3s;
+}
+
+.card_logo{
+  height: 170%;
+  position: absolute;
+  z-index: 1;
+}
+
+/*/////////// STAR 8 ////////////*/
+
+.star {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  padding-top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--third-color);
+  margin: 50px;
+  transform: rotate(30deg);
+}
+
+.star::before, .star::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90px;
+  height: 90px;
+  background-color: var(--third-color);
+}
+
+.star::before {
+  transform: rotate(90deg);
+}
+
+.star::after {
+  transform: rotate(45deg);
+}
+
+.star:hover{
+  transform: rotate(20deg);
+}
+
+.star:hover, .star:hover::after, .star:hover::before{
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(45deg, #e94326, #e9264a, #eb0f0f, #e9264a, #e95c26);
+  background-size: 1200px 400px;
+  animation: degrade 10s linear infinite alternate;
+  transition: 0.3s;
+}
+
+.star_logo{
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  transform: rotate(-20deg);
+}
+
+/*/////////// STAR 12 ////////////*/
+
+.star2 {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  padding-top: 4px;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--third-color);
+  margin: 50px;
+  transform: rotate(-10deg);
+}
+
+.star2::before, .star2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90px;
+  height: 90px;
+  background-color: var(--third-color);
+}
+
+.star2::before {
+  transform: rotate(120deg);
+}
+
+.star2::after {
+  transform: rotate(60deg);
+}
+
+.star2:hover{
+  transform: rotate(0deg);
+}
+
+.star2:hover, .star2:hover::after, .star2:hover::before{
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(45deg, #e94326, #e9264a, #eb0f0f, #e9264a, #e95c26);
+  background-size: 1200px 400px;
+  animation: degrade 10s linear infinite alternate;
+  transition: 0.3s;
+}
+
+.star2_logo{
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+/*/////////////// SQUARE /////////////////*/
+
+.square{
+  width: 100px;
+  height: 100px;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  background: var(--third-color);
+  transform: rotate(10deg);
+}
+
+.square:hover{
+  width: 130px;
+  height: 130px;
+  transform: rotate(0deg);
+  background: linear-gradient(45deg, #e94326, #e9264a, #eb0f0f, #e9264a, #e95c26);
+  background-size: 1200px 400px;
+  animation: degrade 10s linear infinite alternate;
+  transition: 0.3s;
+}
+
+
+/*////////////////////////////////*/
+
+
+.habilities_images svg{
+  margin: 2%;
+}
+
+/*-----------------Projetos----------------*/
+
+.project{
+  height: 90vh;
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+.back_degrade{
+  position: absolute;
+  background: linear-gradient(45deg, #e94326, #e9264a, #eb0f0f, #e9264a, #e95c26);
+  background-size: 400% 100%;
+  font-family: 'Six Caps';
+  font-size: 30vw;
+  
+  animation: degrade 10s linear infinite alternate;  
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+}
+
+.project_card{
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: thistle;
+  gap:10px;
+  z-index: 1;
+}
+
+.card_buttons button{
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  margin-top: 20px;
+}
+
+/*-----------------Contact----------------*/
+
+.contact{
+  height: 80vh;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  gap: 80px;
+  color: var(--third-color);
+}
+
+.networks_images{
+  display: flex;  
+}
+
+.contact_form{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form_texts{
+  padding: 1%;
+  border-radius: 5px;
+}
+
+.input1{
+  width: 100%;
+  padding: 10px;
+  color: var(--third-color);
+  background-color: var(--primary-color);
+}
+
+.input2{
+  width: 100%;
+  height: 10rem;
+  padding: 10px;
+  color: var(--third-color);
+  background-color: var(--primary-color);
+}
+
+.form_button{
+  width: 100%;
+  padding: 10px;
+  background-color: var(--secondary-color);
+  color: var(--third-color);
+  border: none;
+}
+
+
+
+@keyframes degrade {
+  0%{
+    background-position-x: 0%;
+  }
+  100%{
+    background-position-x: 400%;
   }
 }
