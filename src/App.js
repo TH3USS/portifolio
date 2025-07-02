@@ -5,6 +5,8 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contacts from './components/Contacts';
 import Abilities from './components/Abilities';
+import Expirience from './components/Expirience';
+import Project2 from './components/Project2';
 
 function App() {
   return (
@@ -13,8 +15,10 @@ function App() {
       <Home/>
       <Skills/>
       <Abilities/>
+      <Expirience/>
       <Projects/>
       <Contacts />
+      <Project2 />
     </main>
   );
 }
