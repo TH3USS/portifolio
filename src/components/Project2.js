@@ -57,16 +57,19 @@ const ProjectSection = () => {
       </div>
 
       <div className="grade-projetos">
-        {projetosFiltrados.map((proj, index) => (
+        {projetosFiltrados.map((proj, index) => (          
           <div
             className="card-projeto"
             key={index}
-            style={{ backgroundImage: `url(${proj.images})` }}
             onMouseEnter={() => handleMouseEnter(proj)}
             onMouseLeave={handleMouseLeave}
             onMouseMove={handleMouseMove}
-          >
-            <div className="card-title">{proj.name}</div>
+          >                        
+            <div className="card-container">              
+              <div className="card-title">{proj.name}</div>
+              <img className="card-img" src={proj.images}/>
+            </div>
+            <div className="glow"></div>
           </div>
         ))}
       </div>
