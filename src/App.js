@@ -2,23 +2,26 @@ import './App.css';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import Skills from './components/Skills';
-import Projects from './components/Projects';
 import Contacts from './components/Contacts';
 import Abilities from './components/Abilities';
 import Expirience from './components/Expirience';
-import Project2 from './components/Project2';
+import Projects from './components/Projects';
+import LightButton from './components/LightButton';
+import About from './components/About';
 
 function App() {
   return (
     <main>
       <NavBar/>
       <Home/>
+      <About/>
       <Skills/>
       <Abilities/>
       <Expirience/>
-      <Projects/>
+      <Projects />
       <Contacts />
-      <Project2 />
+      
+      <LightButton/>
     </main>
   );
 }
