@@ -1,6 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react'
+import CustomHook from "./CustomHook.js";
 
 const Expirience = () => {
+const refTab = useRef(null);
+  const divs = useRef([]);
+  CustomHook(refTab, divs);
 
 useEffect(() => {
     const observer = new IntersectionObserver(
@@ -63,9 +67,9 @@ const scrollProgress = (scrollMiddle - sectionTop) / sectionHeight;
   }, []);
 
   return (
-     <div class="page-wrapper">
+     <div class="experience" ref={refTab}>
       <div class="section-timeline" ref={sectionRef}>
-        <div class="timeline-container">
+        <div class="timeline-container" ref={(el) => el && divs.current.push(el)}>
           <div class="timeline-component">
             <div class="timeline-progress">
               <div className="progress-fill" ref={fillRef}></div>

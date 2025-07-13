@@ -14,12 +14,12 @@ function App() {
     <main>
       <NavBar/>
       <Home/>
-      <About/>
-      <Skills/>
       <Abilities/>
+      <About/>
       <Expirience/>
       <Projects />
       <Contacts />
+      <Skills/>
       
       <LightButton/>
     </main>

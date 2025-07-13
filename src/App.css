@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Caesar+Dressing&family=Contrail+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&family=Rubik+Mono+One&family=Six+Caps&family=Squada+One&family=Syncopate:wght@400;700&family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Caesar+Dressing&family=Contrail+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&family=Rubik+Mono+One& family=Six+Caps&family=Squada+One&family=Syncopate:wght@400;700&family=Vina+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
 @property --rotate {
@@ -23,9 +21,12 @@
   --card-width: calc(var(--card-height) / 1.5);
 
   --night-color: #080808;
-  --light-color: #eee;
-  --light-squares: rgba(19, 19, 19, 0.067);
+  --light-color: rgb(252, 242, 236);
+  --light-squares: rgba(19, 19, 19, 0.089);
   --night-squares: #eee1;
+
+  --night-des: #eee5;
+  --light-des: rgba(22, 22, 22, 0.637);
 }
 
 body {
@@ -112,7 +113,6 @@ section {
     justify-content: space-between;
     align-items: center;
     & .content {
-      /*font-family: 'MuseoModerno', system-ui;*/
       & .name {
         font-size: 6.5em;
         font-weight: bold;
@@ -132,7 +132,7 @@ section {
         }
       }
       & .des {
-        color: #eee5;
+        color: var(--night-des);
         margin: 30px 0;
         border-left: 0.7em solid #ff4800;
         padding-left: 2em;
@@ -147,7 +147,13 @@ section {
         border-radius: 40px;
         margin-top: 30px;
         display: block;
-        width: max-content;
+        width: max-content;        
+        transition: all 0.2s;
+      }
+
+      & a:hover {
+        background: var(--light-color);
+        color: var(--night-color);
       }
     }
     & .avatar {
@@ -184,11 +190,10 @@ section {
       }
     }
   }
-  &.skills {
+  &.Abilities {
     & .title {
       text-align: center;
       font-size: 3em;
-      /*font-family: 'MuseoModerno', system-ui;*/
     }
     & .des {
       color: #eee5;
@@ -239,7 +244,6 @@ section {
     & .title {
       font-size: 5vw;
       text-align: center;
-      /*font-family: 'MuseoModerno';*/
       margin-top: 100px;
     }
     & .des {
@@ -313,7 +317,6 @@ section {
       display: flex;
       align-items: center;
       justify-self: center;
-      /*font-family: 'MuseoModerno';*/
     }
     & .contacts_content {
       display: flex;
@@ -385,7 +388,7 @@ section {
         grid-row-start: 1;
       }
     }
-    &.skills {
+    &.Abilities {
       & .list {
         grid-template-columns: 1fr;
       }
@@ -436,8 +439,8 @@ section {
 
 /*-----------------HABILITIES----------------*/
 
-.abilities {
-  height: 80vh;
+.skills {
+  height: 100vh;
   padding: 5%;
   display: flex;
   flex-direction: column;
@@ -446,12 +449,12 @@ section {
   /* background-color: var(--primary-color); */
 }
 
-.title_abilities {
+.title_skills {
   text-transform: uppercase;
   font-size: 4em;
 }
 
-.title_abilities span {
+.title_skills span {
   background-image: linear-gradient(
     to right,
     #e78428,
@@ -465,12 +468,11 @@ section {
   -webkit-background-clip: text;
 }
 
-.habilities_images {
-  width: 100%;
+.skills_images {
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
   margin: 4%;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -510,6 +512,7 @@ section {
   animation: degrade 10s linear infinite alternate;
   transition: 0.3s;
 }
+
 
 /*/////////// HEXAGON ////////////*/
 
@@ -551,9 +554,10 @@ section {
 }
 
 .hexa:hover {
-  width: 150px;
+  width: 140px;
   height: 62.75px;
   transform: rotate(0deg);
+  background-color: transparent !important;
   background: linear-gradient(
     45deg,
     #e94326,
@@ -570,8 +574,9 @@ section {
 .hexa:hover:before {
   top: -45.87px;
   left: 0;
-  width: 150px;
+  width: 140px;
   height: 47px;
+  background-color: transparent !important;
   background: linear-gradient(
     45deg,
     #e94326,
@@ -589,8 +594,9 @@ section {
 .hexa:hover:after {
   bottom: -45.87px;
   left: 0;
-  width: 150px;
+  width: 140px;
   height: 47px;
+  background-color: transparent !important;
   background: linear-gradient(
     45deg,
     #e94326,
@@ -608,7 +614,12 @@ section {
 .card_logo {
   height: 170%;
   position: absolute;
-  z-index: 1;
+  z-index: 1;  
+  transition: 0.3s;
+}
+
+.hexa:hover .card_logo{
+  height: 200%;
 }
 
 /*/////////// STAR 8 ////////////*/
@@ -654,6 +665,7 @@ section {
 .star:hover::before {
   width: 100px;
   height: 100px;
+  background-color: transparent !important;
   background: linear-gradient(
     45deg,
     #e94326,
@@ -717,6 +729,7 @@ section {
 .star2:hover::before {
   width: 100px;
   height: 100px;
+  background-color: transparent !important;
   background: linear-gradient(
     45deg,
     #e94326,
@@ -764,6 +777,99 @@ section {
   background-size: 1200px 400px;
   animation: degrade 10s linear infinite alternate;
   transition: 0.3s;
+}
+
+/*/////////// STAR 6 ////////////*/
+
+.star6 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+  cursor: pointer;
+  transform: rotate(-10deg);
+  background: var(--third-color);
+  border-radius: 50%;
+  width: 130px;
+  height: 60px;
+}
+
+.star6::before,
+.star6::after {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 60px;
+  background: var(--third-color);
+  border-radius: 50%;
+}
+
+.star6::before {
+  transform: rotate(60deg);
+}
+
+.star6::after {
+  transform: rotate(120deg);
+}
+
+.star6 {
+}
+
+.star6:hover,
+.star6:hover::before,
+.star6:hover::after {
+  width: 160px;
+  height: 80px;
+  background: linear-gradient(
+    45deg,
+    #e94326,
+    #e9264a,
+    #eb0f0f,
+    #e9264a,
+    #e95c26
+  );
+  background-size: 1200px 400px;
+  animation: degrade 10s linear infinite alternate;
+  transition: 0.3s;
+}
+.star6:hover {
+  transform: rotate(0deg);
+}
+
+/*/////////// SQUARE2 ////////////*/
+
+.square2 {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+  background: var(--third-color);
+  transform: rotate(30deg);
+
+  & svg {
+    position: relative;
+    transform: rotate(-46deg);
+  }
+}
+
+.square2:hover {
+  width: 130px;
+  height: 130px;
+  background: linear-gradient(
+    45deg,
+    #e94326,
+    #e9264a,
+    #eb0f0f,
+    #e9264a,
+    #e95c26
+  );
+  background-size: 1200px 400px;
+  animation: degrade 10s linear infinite alternate;
+  transition: 0.3s;
+  transform: rotate(46deg);
 }
 
 /*////////////////////////////////*/
@@ -899,7 +1005,7 @@ section {
   display: inline-block;
 }
 
-.page-wrapper {
+.experience {
   z-index: 0;
   position: relative;
 }
@@ -1131,6 +1237,7 @@ section {
   color: #ff6a00;
   cursor: pointer;
   transition: all 0.3s;
+  border-radius: 50px;
 }
 
 .filtro.ativo,
@@ -1158,6 +1265,8 @@ section {
   justify-content: center;
   transition: transform 0.3s ease;
   z-index: 1;
+  transform-style: preserve-3d !important;
+  backface-visibility: hidden;
 }
 
 .card-container {
@@ -1170,6 +1279,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(0, 0, 0);
 }
 
 .card-projeto:hover {
@@ -1177,23 +1287,23 @@ section {
 }
 
 .card-title {
-  background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
-  height: 100%;
   color: white;
   font-weight: bold;
   font-size: 1.5em;
-  z-index: 1;
-  display: flex;
-  align-items: end;
-  padding-left: 2rem;
-  padding-bottom: 3rem;
+  z-index: 2;
+  text-align: left;
+  padding: 0 2rem;
+  bottom: -5rem;
   position: relative;
+  transform: translateZ(400px) !important;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.623);
 }
 
 .card-img {
   position: absolute;
   width: fit-content;
+  opacity: 0.2;
   height: 100%;
 }
 
@@ -1328,46 +1438,6 @@ section {
   }
 }
 
-/* Estilização do botão de modo escuro */
-#darkModeToggle {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  background-color: #111;
-  color: #fff;
-  border: none;
-  padding: 16px 16px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  font-size: 18px;
-  z-index: 1000;
-  transition: background-color 0.3s ease;
-}
-
-#darkModeToggle:hover {
-  background-color: #333;
-}
-
-body.dark-mode {
-  background-color: var(--light-color);
-  color: var(--night-color);
-  background-image: repeating-linear-gradient(
-      to right,
-      transparent 0 49px,
-      var(--light-squares) 49px 50px
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      transparent 0 49px,
-      var(--light-squares) 49px 50px
-    );
-}
-
-body.dark-mode .cv-button {
-  border: 2px solid var(--night-color);
-}
-
 .about {
   position: relative;
   height: 100vh;
@@ -1390,6 +1460,20 @@ body.dark-mode .cv-button {
   }
 }
 
+.about-span {
+  background-image: linear-gradient(
+    to right,
+    #e78428,
+    #f32626,
+    #e64514,
+    #e78428
+  );
+  background-size: 200% auto;
+  animation: gradientAnimation 5s linear infinite;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
 .about-content {
   height: 60vh;
   display: flex;
@@ -1398,6 +1482,7 @@ body.dark-mode .cv-button {
   align-items: center;
   backdrop-filter: blur(50px);
   background-color: #2401015b;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.767);
   position: absolute;
 }
 
@@ -1440,7 +1525,8 @@ body.dark-mode .cv-button {
   right: -650px;
   top: 100px;
 
-  -webkit-mask-image: linear-gradient(to right,
+  -webkit-mask-image: linear-gradient(
+    to right,
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 0) 10%,
     rgba(0, 0, 0, 0) 20%,
@@ -1452,7 +1538,8 @@ body.dark-mode .cv-button {
     rgba(0, 0, 0, 1) 90%,
     rgba(0, 0, 0, 0) 100%
   );
-  mask-image: linear-gradient(to right,
+  mask-image: linear-gradient(
+    to right,
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 0) 10%,
     rgba(0, 0, 0, 0) 20%,
@@ -1476,7 +1563,8 @@ body.dark-mode .cv-button {
   z-index: -1;
   left: -600px;
 
-  -webkit-mask-image: linear-gradient(to right,
+  -webkit-mask-image: linear-gradient(
+    to right,
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 0) 10%,
     rgba(0, 0, 0, 0) 20%,
@@ -1488,7 +1576,8 @@ body.dark-mode .cv-button {
     rgba(0, 0, 0, 0) 90%,
     rgba(0, 0, 0, 0) 100%
   );
-  mask-image: linear-gradient(to right,
+  mask-image: linear-gradient(
+    to right,
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 0) 10%,
     rgba(0, 0, 0, 0) 20%,
@@ -1519,7 +1608,8 @@ body.dark-mode .cv-button {
   left: -800px;
   top: 100px;
 
-  -webkit-mask-image: linear-gradient(to right,
+  -webkit-mask-image: linear-gradient(
+    to right,
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 1) 10%,
     rgba(0, 0, 0, 1) 20%,
@@ -1531,7 +1621,8 @@ body.dark-mode .cv-button {
     rgba(0, 0, 0, 0) 90%,
     rgba(0, 0, 0, 0) 100%
   );
-  mask-image: linear-gradient(to right,
+  mask-image: linear-gradient(
+    to right,
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 1) 10%,
     rgba(0, 0, 0, 1) 20%,
@@ -1565,4 +1656,158 @@ body.dark-mode .cv-button {
   color: var(--primary-color);
   height: 30px;
   padding-top: 10px;
+}
+
+/* Estilização do botão de modo escuro */
+#darkModeToggle {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  padding: 16px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+#darkModeToggle:hover {
+  background-color: #333;
+}
+
+body.dark-mode {
+  background-color: var(--light-color);
+  color: var(--night-color);
+  background-image: repeating-linear-gradient(
+      to right,
+      transparent 0 49px,
+      var(--light-squares) 49px 50px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0 49px,
+      var(--light-squares) 49px 50px
+    );
+}
+
+body.dark-mode .home {
+  & .content {
+    & .des {
+      color: var(--light-des);
+    }
+
+    & .cv-button {
+      color: var(--night-color);
+      border: 2px solid var(--night-color);
+    }
+  }
+  /* & .avatar {
+      & .card {
+        & .info {
+          background-color: var(--night-color);
+          color: var(--light-color);
+        }
+      }
+    } */
+}
+
+body.dark-mode .skills {
+  & .skills_images {
+    & .retan {
+      background-color: var(--night-color);
+      & svg path {
+        fill: var(--light-color);
+      }
+    }
+
+    & .hexa {
+      background-color: var(--night-color);
+      & svg path {
+        fill: var(--light-color);
+      }
+    }
+
+    .hexa::after,
+    .hexa::before {
+      background-color: var(--night-color);
+    }
+
+    & .star {
+      background-color: var(--night-color);
+      & svg path {
+        fill: var(--light-color);
+      }
+    }
+
+    .star::after,
+    .star::before {
+      background-color: var(--night-color);
+    }
+
+    & .star2 {
+      background-color: var(--night-color);
+      & svg path {
+        fill: var(--light-color);
+      }
+    }
+
+    .star2::after,
+    .star2::before {
+      background-color: var(--night-color);
+    }
+
+    & .square {
+      background-color: var(--night-color);
+      & svg path {
+        fill: var(--light-color);
+      }
+    }
+
+    & .star6 {
+      background-color: var(--night-color);
+      & svg g path {
+        stroke: var(--light-color);
+      }
+    }
+
+    & .star6 {
+      background-color: var(--night-color);
+      & svg g .first-child {
+        fill: var(--light-color);
+      }
+    }
+
+    .star6::after,
+    .star6::before {
+      background-color: var(--night-color);
+    }
+
+    & .square2 {
+      background-color: var(--night-color);
+      & svg path {
+        fill: var(--light-color);
+      }
+    }
+  }
+}
+
+body.dark-mode .timeline-component {
+  & .fade-top {
+    background-image: linear-gradient(
+      var(--light-color),
+      rgba(252, 242, 236, 0)
+    );
+  }
+
+  & .fade-bottom {
+    background-image: linear-gradient(
+      to top,
+      var(--light-color),
+      rgba(252, 242, 236, 0)
+    );
+  }
 }

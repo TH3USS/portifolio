@@ -8,7 +8,6 @@ import {
 import CustomHook from "./CustomHook.js";
 
 const Projects = () => {
-
   const refTab = useRef(null);
   const divs = useRef([]);
   CustomHook(refTab, divs);
@@ -21,7 +20,6 @@ const Projects = () => {
 
   const tipos = ["Todos", "Front End", "Back End", "Full Stack"];
 
-  
   const projetosFiltrados =
     filtro === "Todos" ? projects : projects.filter((p) => p.type === filtro);
 
@@ -42,9 +40,12 @@ const Projects = () => {
     setMousePosition({ x: e.clientX, y: e.clientY });
   };
 
+
   return (
     <section className="projects" ref={refTab}>
-      <h2 className="titulo" ref={(el) => el && divs.current.push(el)}>Meus Projetos</h2>
+      <h2 className="titulo" ref={(el) => el && divs.current.push(el)}>
+        Meus Projetos
+      </h2>
 
       <div className="filtros">
         {tipos.map((tipo) => (
@@ -59,7 +60,7 @@ const Projects = () => {
       </div>
 
       <div className="grade-projetos">
-        {projetosFiltrados.map((proj, index) => (          
+        {projetosFiltrados.map((proj, index) => (
           <div
             className="card-projeto"
             key={index}
@@ -67,10 +68,10 @@ const Projects = () => {
             onMouseLeave={handleMouseLeave}
             onMouseMove={handleMouseMove}
             ref={(el) => el && divs.current.push(el)}
-          >                        
-            <div className="card-container">              
-              <div className="card-title">{proj.name}</div>
-              <img className="card-img" src={proj.images}/>
+          >
+            <div className="card-container">
+              <div className="card-title"><h3>{proj.name}</h3></div>
+              <img className="card-img" src={proj.images} />
             </div>
             <div className="glow"></div>
           </div>

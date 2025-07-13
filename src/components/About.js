@@ -9,8 +9,8 @@ const About = () => {
 
   return (
     <div className="about" ref={refTab}>
-      <div className="about-content">
-        <h2 ref={(el) => el && divs.current.push(el)}>Mais Sobre Mim!</h2>
+      <div className="about-content" ref={(el) => el && divs.current.push(el)}>
+        <h2>Mais <span className="about-span">Sobre</span> Mim!</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -60,12 +60,12 @@ const About = () => {
           <span class="marquee-text">
             PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO -
             PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO -
-            PORTIFÓLIO - PORTIFÓLIO -
+            PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO -
           </span>
           <span class="marquee-text">
             PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO -
             PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO -
-            PORTIFÓLIO - PORTIFÓLIO -
+            PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO -
           </span>
         </div>
       </div>
@@ -75,12 +75,12 @@ const About = () => {
           <span class="marquee-text">
             PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO -
             PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO -
-            PORTIFÓLIO - PORTIFÓLIO -
+            PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO -
           </span>
           <span class="marquee-text">
             PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO -
             PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO -
-            PORTIFÓLIO - PORTIFÓLIO -
+            PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO - PORTIFÓLIO -
           </span>
         </div>
       </div>
