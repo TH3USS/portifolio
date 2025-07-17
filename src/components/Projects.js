@@ -61,7 +61,8 @@ const Projects = () => {
 
       <div className="grade-projetos">
         {projetosFiltrados.map((proj, index) => (
-          <div
+          <a
+            href={proj.link}
             className="card-projeto"
             key={index}
             onMouseEnter={() => handleMouseEnter(proj)}
@@ -74,7 +75,7 @@ const Projects = () => {
               <img className="card-img" src={proj.images} />
             </div>
             <div className="glow"></div>
-          </div>
+          </a>
         ))}
       </div>
 

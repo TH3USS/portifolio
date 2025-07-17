@@ -8,10 +8,17 @@ const Home = () => {
     <section className='home' ref={refTab}>
       <div className='content'>
         <div className='name'>
-          MEU NOME É <span>MATHEUS</span>
+          matheus<span>.is()</span>
         </div>
+        <ul className='numbers'>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+        </ul>
         <div className='des'>
-        Me chamo Matheus, sou Desenvolvedor FullStack tenho experiência com HTML e CSS linguagens Front End como JavaScript e linguagens Back End como Java, C e principalmente C#, e linguagens de banco de dados como MySql, SQL Server e SQLite.
+        <span>Matheus Ramos Silva</span><p>Desenvolvedor Full Stack versátil, com domínio em tecnologias Front End como React.js, além de experiência em linguagens Back End como C# e Python.</p>
         </div>
         <a className='cv-button' href='/Currículo-Matheus-FullStack.pdf' target='_blank' rel='noopener noreferrer'>Baixe meu CV</a>
       </div>

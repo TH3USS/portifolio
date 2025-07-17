@@ -34,13 +34,13 @@ const Skills = () => {
         {
           skills.map((value, key) => (
             <div key={key} className='item tiltable' ref={(el) => el && divs.current.push(el)}>
-              {value.name === 'C#' ? (
+              {/* {value.name === 'C#' ? (
                 <CSharp/>
               ) : (
                 <FontAwesomeIcon icon={value.icon} />
-              )}
+              )} */}
               <h3>{value.name}</h3>
-              {/*<div className='des'>{value.des}</div>*/}
+              <div className='des'>{value.des}</div>
             </div>
           ))
         }

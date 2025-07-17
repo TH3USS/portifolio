@@ -26,7 +26,7 @@ const NavBar = ({activeTab}) => {
                     <span key={key} 
                     className={activeTab === value ? 'active' : ''}
                     onClick={() => changeTab(value)}
-                    >{value}</span>
+                    >{'.' + value + '()'}</span>
                 ))
             }
         </nav>
