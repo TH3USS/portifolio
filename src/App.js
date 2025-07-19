@@ -1,7 +1,7 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
-import Skills from './components/Skills';
+// import Skills from './components/Skills';
 import Contacts from './components/Contacts';
 import Abilities from './components/Abilities';
 import Expirience from './components/Expirience';
@@ -19,7 +19,7 @@ function App() {
       <Expirience/>
       <Projects />
       <Contacts />
-      <Skills/>
+      {/* <Skills/> */}
       
       <LightButton/>
     </main>
